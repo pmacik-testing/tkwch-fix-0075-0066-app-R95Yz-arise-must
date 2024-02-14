@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-jtjf
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0066-tenant/tkwch-fix-0075-0066-app/devfile-sample-jtjf@sha256:0293b253da496bd5792209a7048f9ee360103be31e59342ac044f8fc6df487b5
+        name: my-nodejs
+        resources: {}
+status: {}
